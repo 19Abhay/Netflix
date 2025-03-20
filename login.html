@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sign In / Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+    <link href="login.css" rel="stylesheet">
+
+</head>
+<body>
+    <img src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="Background" class="background-image">
+    
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <a href="index.html">
+                    <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo" class="brand__logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <!-- Sign In Form -->
+        <div class="auth-form" id="signin-form">
+            <h1>Sign In</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder=" " required>
+                    <label for="email" class="form-label">Email or phone number</label>
+                    <div class="error-message" id="email-error">Please enter a valid email or phone number.</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder=" " required>
+                    <label for="password" class="form-label">Password</label>
+                    <div class="error-message" id="password-error">Your password must contain between 4 and 60 characters.</div>
+                </div>
+                <button type="submit" class="btn-submit">Sign In</button>
+                <div class="form-help">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="help-link">Need help?</a>
+                </div>
+            </form>
+            <div class="signup-now">
+                New to Netflix? <a class="signup-link" id="show-signup">Sign up now</a>
+            </div>
+            <div class="recaptcha-terms">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                <a href="#">Learn more.</a>
+            </div>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="auth-form toggle-form" id="signup-form">
+            <h1>Sign Up</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder=" " required>
+                    <label for="name" class="form-label">Name</label>
+                    <div class="error-message" id="name-error">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="signup-email" placeholder=" " required>
+                    <label for="signup-email" class="form-label">Email</label>
+                    <div class="error-message" id="signup-email-error">Please enter a valid email.</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="signup-password" placeholder=" " required>
+                    <label for="signup-password" class="form-label">Password</label>
+                    <div class="error-message" id="signup-password-error">Your password must contain between 4 and 60 characters.</div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="confirm-password" placeholder=" " required>
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <div class="error-message" id="confirm-password-error">Passwords do not match.</div>
+                </div>
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+            <div class="signup-now">
+                Already have an account? <a class="signup-link" id="show-signin">Sign in</a>
+            </div>
+            <div class="recaptcha-terms">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                <a href="#">Learn more.</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <p>Questions? Call <a href="tel:000-800-040-1843">000-800-040-1843</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+            </div>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select>
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                </select>
+            </div>
+            <p class="netflix-country">Netflix India</p>
+        </div>
+    </footer>
+
+    
+    <script src="login.js"></script>
+</body>
+</html>
